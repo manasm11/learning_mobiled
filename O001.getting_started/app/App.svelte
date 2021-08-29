@@ -1,14 +1,15 @@
 <page>
-    <actionBar title="My Tasks" />
-
+    <actionBar title="My Tasks Hello" />
     <tabs tabsPosition="bottom">
             <tabStrip>
-                    <tabStripItem title="To Do" />
+                    <tabStripItem title="To Do Items" />
                     <tabStripItem title="Completed" />
             </tabStrip>
 
             <tabContentItem>
                 <gridLayout columns="*,120" rows="70,*">
+                <image src="https://wallpaperaccess.com/full/2866246.jpg"></image>
+
                     <!-- Configures the text field and ensures that pressing Return on the keyboard
                             produces the same result as tapping the button. -->
                     <textField col="0" row="0" bind:text="{textFieldValue}" hint="Type new task..." editable="true"
@@ -34,6 +35,8 @@
 
 <script>
     import { Template } from 'svelte-native/components'
+
+    console.log("HELLO")
 
     let todos = []
     let dones=[] //completed items go here
